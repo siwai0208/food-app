@@ -12,26 +12,26 @@ Laravel8を用いたECサンプルアプリ
 
 ## How to use
 
-- LEMPインフラの準備
-  <br>Docker LEMP環境構築 (https://laravel.com)
+1. LEMPインフラの準備
+  <br>[Docker LEMP環境構築](https://github.com/siwai0208/docker-template)
 
-- Clone this repository into document root (/usr/share/nginx/html/laravel)
+2. Clone this repository into document root (/usr/share/nginx/html/laravel)
 ```
 git clone https://github.com/siwai0208/food-app laravel
 ```
 
-- chmod
+3. storage と　bootstrap/cache/　のパーミッション変更
 ```
 chmod -R 777 storage
 chmod -R 777 bootstrap/cache/
 ```
 
-- Composer update
+4. Composer update
 ```
 composer update
 ```
 
-- .envファイルを編集
+5. .envファイルを編集
 ```
 cp .env.example .env
 vim .env
@@ -41,14 +41,14 @@ vim .env
  DB_PASSWORD=xxxx
 ```
 
-- DB migrate
+6. DB migrate
 ```
 php artisan key:generate
 php artisan config:cache
 php artisan migrate
 ```
 
-- DB seed (Option)
+7. DB seed to update item (Option)　
 ```
 php artisan db:seed
 ```
