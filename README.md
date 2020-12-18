@@ -12,9 +12,9 @@ Laravel8を用いたECサンプルアプリ
 
 ## How to use
 
-- Clone this repository
+- Clone this repository into document root /usr/share/nginx/html/laravel
 ```
-git clone https://github.com/siwai0208/food-app <project-name>
+git clone https://github.com/siwai0208/food-app laravel
 ```
 
 - chmod
