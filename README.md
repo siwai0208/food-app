@@ -12,7 +12,12 @@ Laravel8を用いたECサンプルアプリ
 
 ## How to use
 
-- Clone this repository into document root /usr/share/nginx/html/laravel
+- LEMPインフラの準備
+  <br>Docker LEMP環境構築 (https://laravel.com)
+  <br>AWS Cloudformation LEMP環境構築 (https://laravel.com)
+  <br>Terraform LEMP環境構築 (https://laravel.com)
+
+- Clone this repository into document root (/usr/share/nginx/html/laravel)
 ```
 git clone https://github.com/siwai0208/food-app laravel
 ```
