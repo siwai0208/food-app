@@ -6,7 +6,7 @@ Laravel8を用いたECサンプルアプリ
 
 機能
 - ユーザー登録・ログイン
-- メインページ()
+- メインページ (15アイテム表示)
 - カートページ
 - 購入ページ
 
@@ -14,8 +14,6 @@ Laravel8を用いたECサンプルアプリ
 
 - LEMPインフラの準備
   <br>Docker LEMP環境構築 (https://laravel.com)
-  <br>AWS Cloudformation LEMP環境構築 (https://laravel.com)
-  <br>Terraform LEMP環境構築 (https://laravel.com)
 
 - Clone this repository into document root (/usr/share/nginx/html/laravel)
 ```
