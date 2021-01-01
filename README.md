@@ -15,13 +15,15 @@ Laravel8を用いたECサンプルアプリ
 1. LEMPインフラの準備
   <br>[Docker LEMP環境構築](https://github.com/siwai0208/docker-template)
 
-2. Clone this repository into document root (/usr/share/nginx/html/laravel)
+2. Login to App container and clone this repository into document root (/usr/share/nginx/html/laravel)
 ```
-git clone https://github.com/siwai0208/food-app laravel
+$ docker-compose exec app bash
+$ git clone https://github.com/siwai0208/food-app laravel
 ```
 
 3. storage と　bootstrap/cache/　のパーミッション変更
 ```
+cd laravel/
 chmod -R 777 storage
 chmod -R 777 bootstrap/cache/
 ```
@@ -35,10 +37,10 @@ composer update
 ```
 cp .env.example .env
 vim .env
- DB_HOST=xxxx
- DB_DATABASE=xxxx
- DB_USERNAME=xxxx
- DB_PASSWORD=xxxx
+ DB_HOST=mysql
+ DB_DATABASE="See docker-compose.yml"
+ DB_USERNAME="See docker-compose.yml"
+ DB_PASSWORD="See docker-compose.yml"
 ```
 
 6. DB migrate
